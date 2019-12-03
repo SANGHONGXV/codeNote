@@ -1,5 +1,10 @@
 let error = ''
-
+/**
+ * @description: 表单验证
+ * @param {Object} data
+ * @param {Object} rule  [{name: 'phone', checkType: 'phoneno', errorMsg: '请填写正确的电话'}]
+ * @return:
+ */
 export function check (data, rule) {
   for (var i = 0; i < rule.length; i++) {
     if (!rule[i].checkType) { return true }
